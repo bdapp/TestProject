@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/id_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textColor="#dddddd"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddd"/>
+    
+    <TextView android:id="@+id/id_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddd"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/enter"
+            android:background="@drawable/bg_button"
+            android:textColor="#dddddd"
+            android:id="@+id/id_dialog_enter"/>
+        
+        <View android:layout_width="0.1dp"
+        android:layout_height="match_parent"
+        android:background="#dddddd"/>
+        
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:background="@drawable/bg_button"
+            android:textColor="#dddddd"
+            android:id="@+id/id_dialog_cancel"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
